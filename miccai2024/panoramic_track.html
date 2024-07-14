@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semi-supervised Teeth Segmentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  公开对基本依赖    -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="../jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <!--  默认的相关依赖  -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../bootstrap/font/bootstrap-icons.css">
+    <!--  导入自定义依赖  -->
+    <link rel="stylesheet" href="../css/miccai2024.css">
+    <script type="text/javascript" src="../js/miccai2024.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid" id="container-fluid-id">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <!--    收纳按钮        -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--    导航图标        -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo" class="logo-img">
+            </a>
+        </div>
+
+        <!--    不同的导航链接        -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="panoramic_track.html">Panoramic Track🔥</a></li>
+                <li><a href="cbct_track.html">CBCT Track🔥</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="challenge_winners.html">Challenge Winners</a></li>
+                <li><a href="call_for_papers.html">Call for Papers</a></li>
+                <li><a href="accepted_papers.html">Accepted Papers</a></li>
+                <li><a href="organizers.html">Organizers</a></li>
+                <!--      以往挑战赛      -->
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle btn-flatten" type="button" id="sts-dropdown-menu"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Previous STS
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu nav-dropdown" aria-labelledby="sts-dropdown-menu">
+                            <li><a href="https://tianchi.aliyun.com/competition/entrance/532086">STS 2023
+                                (Vancouver)</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="miccai2024-content" id="miccai2024">
+    <div class="image-content main-content" style="display: flex; flex-direction: row">
+        <img src="images/panoramic-1.png" alt="panoramic-image" style="width: 100%; height: auto">
+    </div>
+
+    <div class="introduction-content main-content">
+        <h2 class="content-title">
+            2D Panoramic Xray
+            <a href="https://www.codabench.org/competitions/3024/" class="breathing-btn">
+                <span class="badge">👉 CodaBench</span>
+            </a>
+        </h2>
+        <p>
+            For this track, we test the model's teeth instance identification and segmentation capabilities using
+            panoramic Xray images with different ages and medical centers. Among them, the test images may contain
+            cases of caries, and some images may also have missing teeth or incomplete teeth.
+            We aim to test different abilities with different testing images:
+            <strong>Location</strong>, <strong>Segmentation</strong>, <strong>Classification</strong>.
+        </p>
+        <p>
+            In specific, we provide 2450 high-resolution panoramic Xray images, including 2350 unlabeled training sets,
+            30 labeled training sets, 20 validation sets, and 100 independent test sets.
+            All images are in JPG format, and the annotation files are in JSON format, following the format of Labelme.
+        </p>
+        <h3 class="content-subtitle">Evaluation</h3>
+        <p>
+            The segmentation inference results are evaluated using Dice Similarity Coefficient (DSC),
+            Normalized Surface Dice (NSD), Intersection over Union (IoU), Panoptic Quality (PQ),
+            Identification Accuracy (IA), Running time (RT) and Area under GPU memory-time curve (GPU-area).
+            All metrics will be used to compute the ranking.
+            We will release the code on how to calculate the 10 performance metrics with the python3 version.
+            The ranking scheme includes the following five steps:
+        </p>
+        <ul>
+            <li>
+                Step 1:
+                In order to maintain consistency with our previous challenge and assess the algorithm's performance at
+                the image level, our evaluation framework will first initially compute three metrics, Dice, IoU and NSD,
+                on a per-image basis to derive the algorithm's Dice (image_Dice), IoU (image_IoU) and NSD (image_NSD)
+                scores at image-level.
+            </li>
+            <li>
+                Step 2:
+                Next, given the challenge's focus on instance-level analysis, we also will employ a greedy algorithm to
+                match the corresponding prediction results with the ground truth, allowing for the calculation of Dice
+                (instance_Dice), IoU (instance_IoU), NSD (instance_NSD), IA (instance_IA) and PQ (instance_PQ) scores at
+                the instance level.
+            </li>
+            <li>
+                Step 3:
+                Then, the evaluation will include measurements of running time (RT) and GPU consumption (GPU_area)
+                for each algorithm.
+            </li>
+            <li>
+                Step 4:
+                Take the mean of the ten metrics over the test cases, and rank separately among the teams.
+            </li>
+            <li>
+                Step 5:
+                A final overall rank is given by taking the average of the four ranks.
+                In the case of equal average rankings for two teams, they are considered tied.
+            </li>
+        </ul>
+        <h3 class="content-subtitle">Awards</h3>
+        <p>
+            To determine the winners, we will rank the participants based on their final algorithm on the independent test
+            set.
+            We have planned a range of comprehensive awards for this track, which we hope will attract and motivate
+            you to participate.We look forward to your involvement and
+            to seeing the outstanding work that will emerge from this competition.
+        </p>
+        <ul>
+            <li>Cash: $500 for the 1st participant.</li>
+            <li>Certificates: The top 10 participants will receive a certificate.</li>
+            <li>Oral presentation: Top-performing participants will be invited to participate in the presentation</li>
+            <li>Paper publication: Teams with outstanding performance can submit papers to our workshops and participate in review papers.</li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="footer-content" id="footer">
+    <p style="text-align: center">
+        Copyright @
+        <a href="https://www.cuz.edu.cn/" target="_blank">
+            College of Media Engineering, Communication University of Zhejiang, Hangzhou, 310018, China.
+        </a>
+    </p>
+</div>
+
+</body>
+</html>

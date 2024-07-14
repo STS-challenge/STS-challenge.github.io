@@ -1,0 +1,55 @@
+
+body {
+    padding-top: 60px;
+}
+
+body, .btn {
+    font-size: 12pt;
+    font-family: 'Bariol Regular', 'Segoe UI', '微軟雅黑體', serif !important;
+}
+
+.navbar {
+    min-height: 60px;
+}
+
+.container-fluid {
+    max-width: 1601px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar-brand {
+    padding: 5px 15px 0 15px;
+}
+
+.logo-img {
+    max-height: 100%;
+    width: auto;
+}
+
+.btn-flatten {
+    background: #f8f8f8;
+    border: none;
+    color: #333333;
+}
+
+.nav-dropdown {
+    font-size: 12pt;
+}
+
+
+@media (min-width: 768px) {
+    .nav > li > a {
+        padding: 20px 15px;
+        color: #333333 !important;
+    }
+
+    .nav > li > div {
+        padding-top: 13px;
+    }
+}
+
+
+

@@ -1,0 +1,187 @@
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+.main-content {
+    max-width: 1601px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slogan-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    background: url(../miccai2024/images/home-bg.png) 0 0 / cover no-repeat fixed;
+}
+
+#slogan-header {
+    font-weight: bold;
+}
+
+.slogan-location {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.slogan-time {
+    font-size: 24px;
+}
+
+p {
+    text-align: justify;
+}
+
+.alert-btn {
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #dff0d8 !important;
+    border-color: #d6e9c6 !important;
+    overflow: hidden;
+}
+
+.alert-btn > a {
+    color: #32825c;
+    line-height: 1;
+}
+
+.content-title {
+    font-weight: bold;
+}
+
+.content-subtitle {
+    font-weight: bold;
+}
+
+li {
+    text-align: justify;
+}
+
+.track-btn {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f2dede !important;
+    border-color: #ebccd1 !important;
+}
+
+.track-btn > a {
+    color: #cb2f37;
+    line-height: 1;
+    height: 100%;
+    width: 100%;
+}
+
+table{
+    min-width: 100%;
+}
+
+.footer-content {
+    color: #333333;
+    font-size: 10pt;
+    margin-top: 48px;
+    padding: 15px 0;
+    background-color: #f8f8f8;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.image-content {
+    margin-top: 15px;
+}
+
+.badge {
+    background-color: #cb2f37;
+}
+
+/* 呼吸按钮样式 */
+.breathing-btn {
+    display: inline-block;
+    animation: pulse 0.5s ease-in infinite alternate
+}
+
+@-webkit-keyframes pulse {
+    0% {opacity: 0.9; transform: scale(1.05);}
+}
+
+@keyframes pulse {
+    0% {opacity: 0.9; transform: scale(1.05);}
+}
+
+@media (max-width: 767px) {
+    .slogan-detail {
+        display: none;
+    }
+
+    .row .col-md-6:last-of-type .track-btn {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .td-padding {
+        padding-left: 18px !important;
+    }
+
+    td{
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .slogan-location {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .slogan-time {
+        font-size: 20px;
+    }
+
+    .content-title {
+        font-size: 28px;
+    }
+
+    .content-subtitle {
+        font-size: 24px;
+    }
+
+
+}
+
+
+@media (max-width: 500px) {
+
+    .slogan-location {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .slogan-time {
+        font-size: 16px;
+    }
+
+    .content-title {
+        font-size: 24px;
+    }
+
+    .content-subtitle {
+        font-size: 20px;
+    }
+}

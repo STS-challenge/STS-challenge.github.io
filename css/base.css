@@ -5,7 +5,9 @@ body {
 
 body, .btn {
     font-size: 12pt;
-    font-family: 'Bariol Regular', 'Segoe UI', '微軟雅黑體', serif !important;
+    /*font-family: 'Bariol Regular', 'Segoe UI', '微軟雅黑體', serif !important;*/
+    font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif !important;
+
 }
 
 .navbar {

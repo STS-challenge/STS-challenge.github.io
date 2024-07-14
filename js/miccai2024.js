@@ -21,12 +21,12 @@ function adjustFontSize() {
     const calculateTextWidth = () => {
         const canvas = document.createElement('canvas');
         const context = canvas.getContext('2d');
-        context.font = `${fontSize}px 'Bariol Regular', 'Segoe UI', '微軟雅黑體', serif`;
+        context.font = `${fontSize}px 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif`;
         return context.measureText(text).width;
     };
 
     // Adjust the font size until the text fits within the container width
-    while (calculateTextWidth() > containerWidth && fontSize > 0) {
+    while (calculateTextWidth() > (containerWidth - 6) && fontSize > 0) {
         fontSize -= 1;
         container.style.fontSize = fontSize + 'px';
     }

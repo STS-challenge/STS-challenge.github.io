@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Semi-supervised Teeth Segmentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <meta name="author" content="STS Challenge">
+    <meta name="description" content="Website for STS Challenge at MICCAI Conferences.">
+    <meta name="keywords" content="MICCAI, MICCAI 2023, MICCAI 2024, STS, Semi-supervised Learning, Segmentation, Teeth Segmentation, Panoramic X-ray, Dental CBCT, Challenge">
     <!--  公开对基本依赖    -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script type="text/javascript" src="../jquery/jquery-1.12.4.min.js"></script>
@@ -38,15 +42,41 @@
         <!--    不同的导航链接        -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="panoramic_track.html">Panoramic Track🔥</a></li>
-                <li><a href="cbct_track.html">CBCT Track🔥</a></li>
+                <li><a href="index.html">Home</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="challenge_winners.html">Challenge Winners</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle btn-flatten" type="button" id="winner-dropdown-menu"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Challenge Winners
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu nav-dropdown" aria-labelledby="winner-dropdown-menu">
+                            <li><a href="evaluation_protocol.html">Evaluation Protocol</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="panoramic_winners.html">2D Panoramic Track Winners</a></li>
+                            <li><a href="cbct_winners.html">3D Dental CBCT Track Winners</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="call_for_papers.html">Call for Papers</a></li>
-                <li><a href="accepted_papers.html">Accepted Papers</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle btn-flatten" type="button" id="paper-dropdown-menu"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Accepted Papers
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu nav-dropdown" aria-labelledby="paper-dropdown-menu">
+                            <li><a href="accepted_papers.html">Workshop Accepted Papers</a></li>
+                            <li><a href="challenge_publications.html">Challenge-Related Publications</a></li>
+                        </ul>
+                    </div>
+                </li>
+
                 <li><a href="organizers.html">Organizers</a></li>
                 <!--      以往挑战赛      -->
                 <li>
@@ -71,14 +101,21 @@
     <div class="slogan-content">
         <div style="text-align: center;">
             <h1 id="slogan-header">
-                STS 2024 <span class="slogan-detail">: 2th Semi-supervised Teeth Segmentation</span> Challenge and
-                Workshop
+                STS 2024 <span class="slogan-detail">: 2nd Semi-supervised Teeth Segmentation</span> MICCAI Challenge
             </h1>
             <h2 class="slogan-location">
                 MICCAI 2024, MARRAKESH, MOROCCO
             </h2>
             <h3 class="slogan-time">October 6-10, 2024</h3>
         </div>
+    </div>
+
+    <div class="alert-content main-content">
+        <button class="btn btn-default alert-btn">
+            <a href="files/STS2024-REGISTRATION-FORM.pdf">
+                <strong>Download</strong> the form to participate 🥳
+            </a>
+        </button>
     </div>
 
     <div class="introduction-content main-content">
@@ -92,11 +129,12 @@
 <div class="footer-content" id="footer">
     <p style="text-align: center">
         Copyright @
-        <a href="https://www.cuz.edu.cn/" target="_blank">
+        <a href="https://www.cuz.edu.cn/" target="_blank" style="color: inherit">
             College of Media Engineering, Communication University of Zhejiang, Hangzhou, 310018, China.
         </a>
     </p>
 </div>
+
 
 
 </body>

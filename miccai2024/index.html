@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Semi-supervised Teeth Segmentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <meta name="author" content="STS Challenge">
+    <meta name="description" content="Website for STS Challenge at MICCAI Conferences.">
+    <meta name="keywords" content="MICCAI, MICCAI 2023, MICCAI 2024, STS, Semi-supervised Learning, Segmentation, Teeth Segmentation, Panoramic X-ray, Dental CBCT, Challenge">
     <!--  公开对基本依赖    -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script type="text/javascript" src="../jquery/jquery-1.12.4.min.js"></script>
@@ -38,15 +42,43 @@
         <!--    不同的导航链接        -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="panoramic_track.html">Panoramic Track🔥</a></li>
-                <li><a href="cbct_track.html">CBCT Track🔥</a></li>
+                <li><a href="index.html">Home</a></li>
+                <!--                <li><a href="panoramic_track.html">Panoramic Track🔥</a></li>-->
+                <!--                <li><a href="cbct_track.html">CBCT Track🔥</a></li>-->
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="challenge_winners.html">Challenge Winners</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle btn-flatten" type="button" id="winner-dropdown-menu"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Challenge Winners
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu nav-dropdown" aria-labelledby="winner-dropdown-menu">
+                            <li><a href="evaluation_protocol.html">Evaluation Protocol</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="panoramic_winners.html">2D Panoramic Track Winners</a></li>
+                            <li><a href="cbct_winners.html">3D Dental CBCT Track Winners</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="call_for_papers.html">Call for Papers</a></li>
-                <li><a href="accepted_papers.html">Accepted Papers</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle btn-flatten" type="button" id="paper-dropdown-menu"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Accepted Papers
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu nav-dropdown" aria-labelledby="paper-dropdown-menu">
+                            <li><a href="accepted_papers.html">Workshop Accepted Papers</a></li>
+                            <li><a href="challenge_publications.html">Challenge-Related Publications</a></li>
+                        </ul>
+                    </div>
+                </li>
+
                 <li><a href="organizers.html">Organizers</a></li>
                 <!--      以往挑战赛      -->
                 <li>
@@ -71,8 +103,7 @@
     <div class="slogan-content">
         <div style="text-align: center;">
             <h1 id="slogan-header">
-                STS 2024 <span class="slogan-detail">: 2th Semi-supervised Teeth Segmentation</span> Challenge and
-                Workshop
+                STS 2024 <span class="slogan-detail">: 2nd Semi-supervised Teeth Segmentation</span> MICCAI Challenge
             </h1>
             <h2 class="slogan-location">
                 MICCAI 2024, MARRAKESH, MOROCCO
@@ -83,100 +114,107 @@
 
     <div class="alert-content main-content">
         <button class="btn btn-default alert-btn">
-            <a href="files/STS2024-REGISTRATION-FORM.pdf" class="breathing-btn">
+            <a href="files/STS2024-REGISTRATION-FORM.pdf">
                 <strong>Download</strong> the form to participate 🥳
             </a>
         </button>
     </div>
 
     <div class="introduction-content main-content">
-        <h2 class="content-title">Introduction</h2>
+        <h2 class="content-title">🤗 Introduction</h2>
         <p>
-            Computer-aided diagnosis tools are increasingly popular in modern dental practice, particularly for
-            treatment planning or comprehensive prognosis evaluation. In particular, the 2D panoramic X-ray image and 3D
+            The 2D panoramic X-ray image and 3D
             dental cone-beam computed tomography (CBCT) examination are the efficient ways for dentists to determine
             invisible caries, impacted teeth and supernumerary teeth among children. Yet, identifying teeth from
             panoramic X-ray images or CBCT scans and further manually annotating the teeth is time-consuming and
             labor-intensive. Thus, we usually cannot obtain a huge number of labeled cases, which limits the development
             of deep learning algorithms for segmenting teeth and automatically analyzing diseases.
-            This issue stems from the lack of a comprehensive, large-scale evaluation dataset,
-            standardized evaluation protocols, and the insufficiency of current automatic metrics. As a potential
-            alternative, semi-supervised learning can explore useful information from unlabeled cases.
+            As a potential alternative, semi-supervised learning can explore useful information from unlabeled cases.
         </p>
         <p>
-            Now, we are proud to announce the launch of the Semi-supervised Teeth Segmentation 2024 Challenge (STS 2024)
-            that
-            moves us towards
-            addressing these issues. We host two challenge tracks: (1) <strong>2D panoramic Xray segmentation </strong>,
-            and (2) <strong>3D dental CBCT segmentation </strong>,
-            and will be providing the following set of data and resources:
+            In this year, we aim to promote the development of the tooth segmentation. We
+            extend previous <a href="https://tianchi.aliyun.com/competition/entrance/532086" class="link-btn">🤓STS 2023 Challenge</a>
+            from binary semantic settings to multi-instance and multi-class
+            segmentation settings, with an emphasis on instance-level segmentation. Specifically,
+            we host two challenge tracks, and are proud to announce the launch of the challenge workshop.
+            If you are interested in publishing a workshop paper,
+            please <a href="call_for_papers.html" class="link-btn">👉read the CfP and submit your paper </a>:
         </p>
-        <ul>
-            <li>
-                Benchmark Datasets: diverse and comprehensive datasets will be released publicly for both tracks,
-                ensuring that all participants have access to the same information and resources.
-            </li>
-            <li>
-                Evaluation Protocol: A standardized evaluation protocol and metrics will be established and shared with
-                all participants. These metrics will be designed keeping in mind the nuances and specifics of the tasks,
-                ensuring fair and objective evaluation.
-            </li>
-            <li>
-                Baselines: For aiding participants and setting a preliminary standard, baseline results will be shared.
-            </li>
-            <li>
-                Awards for top performing participants for different tracks and challenges.
-            </li>
-        </ul>
-        <p>
-            In addition to the benchmark dataset, after the challenge, we will be releasing all human annotations for
-            all submissions for the participants. This hopefully would be a contribution to the community for future
-            evaluation tooling development.
-        </p>
-    </div>
 
-    <div class="track-content main-content">
-        <h2 class="content-title">Tracks</h2>
-        <p>
-            STS 2024 has two challenge tracks: (1) <strong>2D panoramic Xray segmentation </strong>,
-            and (2) <strong>3D dental CBCT segmentation </strong>.
-            In STS panoramic track,
-            we scale up the dataset and provide instance annotations for different teeth,
-            inclusive of pertinent category information. The segmentation algorithm is expected to
-            accurately segment 32 permanent teeth (including wisdom teeth) and 20 possible deciduous teeth in panoramic
-            X-ray images.
-            Besides,
-            in the STS CBCT track, the algorithm is required to overcome the input of different imaging field sizes and
-            identify and segment different tooth instances. For more details, please refer to the respective track
-            guidelines.
-        </p>
         <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <button class="btn btn-default track-btn">
-                    <a href="panoramic_track.html">
-                        2D Panoramic Xray Track 🔥
-                    </a>
-                </button>
+                <div class="panel panel-default p-panel">
+                    <div class="panel-heading p-panel-heading">
+                        <h3 class="panel-title">Track 1: 2D Panoramic X-ray Segmentation</h3>
+                    </div>
+                    <div class="panel-body p-panel-body">
+                        <img src="images/panoramic-1.png" alt="panoramic-image" style="width: 100%; height: auto">
+                        <p class="small-text">
+                            The segmentation algorithm is expected to accurately segment 32 permanent teeth (including
+                            wisdom teeth) and 20 possible deciduous teeth in panoramic X-ray images.
+                        </p>
+                        <p style="text-align: center; display: flex">
+                            <a href="https://www.codabench.org/competitions/3024/" class="p-join-btn  breathing-btn" target="_blank">CLICK ME TO JOIN🔥</a>
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <button class="btn btn-default track-btn">
-                    <a href="cbct_track.html">
-                        3D Dental CBCT Track 🔥
-                    </a>
-                </button>
+                <div class="panel panel-default c-panel">
+                    <div class="panel-heading c-panel-heading">
+                        <h3 class="panel-title">Track 2: 3D Dental CBCT Segmentation</h3>
+                    </div>
+                    <div class="panel-body c-panel-body">
+                        <img src="images/cbct-1.png" alt="cbct-image" style="width: 100%; height: auto">
+                        <p class="small-text">
+                            The segmentation algorithm needs to accurately segment 32 permanent teeth (including wisdom
+                            teeth) in 3D dental CBCT volume scans of different imaging fields.
+                        </p>
+                        <p style="text-align: center; display: flex">
+                            <a href="https://www.codabench.org/competitions/3025/" class="c-join-btn breathing-btn" target="_blank">CLICK ME TO JOIN🔥</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="track-content main-content">
+        <h2 class="content-title">📬 News</h2>
+        <p>
+            We are excited to share some recent news and updates with you, highlighting significant milestones and
+            upcoming events that reflect our ongoing efforts and achievements in the STS 2024 Challenge:
+        </p>
+
+        <ul>
+            <li>
+                [2024.07.10] STS 2024 MICCAI Challenge has been configured on the CodaBench platform and the challenge
+                has officially started.
+                We look forward to seeing participants from around the world showcase their talent and innovation.
+            </li>
+            <li>
+                [2024.07.01] Our workshop paper submission application has been approved on the OpenReview platform.
+            </li>
+            <li>
+                [2024.04.01] Challenge workshop: Supervised and Semi-supervised Multi-Structure Segmentation and
+                Landmark Detection in Dental Data joint-event website launched.
+            </li>
+            <li>
+                [2024.03.12] The STS 2024 challenge has been accepted to MICCAI 2024 challenge.
+                We look forward to meeting each one of you face to face. See you all in Marrakesh, Morocco!
+            </li>
+        </ul>
+    </div>
+
     <div class="date-content main-content">
-        <h2 class="content-title">Important Dates (Pacific Time Zone)</h2>
+        <h2 class="content-title">🗓️ Important Dates (PST)</h2>
         <div class="row">
             <div class="col-xs-12">
                 <table class="table table-striped">
                     <tbody>
                     <tr>
                         <td>Registration Open</td>
-                        <td class="td-padding">July 10</td>
+                        <td class="td-padding">July 15</td>
                     </tr>
                     <tr>
                         <td>Challenge Validation Deadline</td>
@@ -202,10 +240,10 @@
     </div>
 
     <div class="contact-content main-content">
-        <h2 class="content-title">Contact</h2>
+        <h2 class="content-title">📧 Contact</h2>
         <p>
             For any inquiries, please feel free to reach out via email at
-            <a href="mailto:SemiTeethSegChallenge@aliyun.com">SemiTeethSegChallenge@aliyun.com</a>.
+            <a href="mailto:SemiTeethSegChallenge@aliyun.com" class="red-link">SemiTeethSegChallenge@aliyun.com</a>.
             We welcome any questions, feedback, or requests for further information
             regarding the STS 2024 Challenge.
             We look forward to meeting each one of you this year, face to face if possible.
@@ -217,7 +255,7 @@
 <div class="footer-content" id="footer">
     <p style="text-align: center">
         Copyright @
-        <a href="https://www.cuz.edu.cn/" target="_blank">
+        <a href="https://www.cuz.edu.cn/" target="_blank" style="color: inherit">
             College of Media Engineering, Communication University of Zhejiang, Hangzhou, 310018, China.
         </a>
     </p>

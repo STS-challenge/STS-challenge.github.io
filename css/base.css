@@ -4,7 +4,7 @@ body {
 }
 
 body, .btn {
-    font-size: 12pt;
+    font-size: 13pt;
     /*font-family: 'Bariol Regular', 'Segoe UI', '微軟雅黑體', serif !important;*/
     font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif !important;
 
@@ -49,7 +49,7 @@ body, .btn {
     }
 
     .nav > li > div {
-        padding-top: 13px;
+        padding-top: 11px;
     }
 }
 

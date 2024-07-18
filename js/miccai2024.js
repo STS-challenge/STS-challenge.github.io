@@ -26,7 +26,7 @@ function adjustFontSize() {
     };
 
     // Adjust the font size until the text fits within the container width
-    while (calculateTextWidth() > (containerWidth - 6) && fontSize > 0) {
+    while (calculateTextWidth() > (containerWidth * 0.97) && fontSize > 0) {
         fontSize -= 1;
         container.style.fontSize = fontSize + 'px';
     }
@@ -42,7 +42,7 @@ function adjustMainPadding() {
     var footer = document.getElementById('footer');
     var mainContainer = document.getElementById('miccai2024');
     var footerHeight = footer.offsetHeight;
-    mainContainer.style.paddingBottom = footerHeight + 'px';
+    mainContainer.style.paddingBottom = footerHeight + 15 + 'px';
 }
 
 // Adjust padding on load

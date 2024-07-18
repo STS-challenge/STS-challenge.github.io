@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Semi-supervised Teeth Segmentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <meta name="author" content="STS Challenge">
+    <meta name="description" content="Website for STS Challenge at MICCAI Conferences.">
+    <meta name="keywords" content="MICCAI, MICCAI 2023, MICCAI 2024, STS, Semi-supervised Learning, Segmentation, Teeth Segmentation, Panoramic X-ray, Dental CBCT, Challenge">
     <!--  公开对基本依赖    -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script type="text/javascript" src="../jquery/jquery-1.12.4.min.js"></script>
@@ -38,15 +42,41 @@
         <!--    不同的导航链接        -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="panoramic_track.html">Panoramic Track🔥</a></li>
-                <li><a href="cbct_track.html">CBCT Track🔥</a></li>
+                <li><a href="index.html">Home</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="challenge_winners.html">Challenge Winners</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle btn-flatten" type="button" id="winner-dropdown-menu"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Challenge Winners
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu nav-dropdown" aria-labelledby="winner-dropdown-menu">
+                            <li><a href="evaluation_protocol.html">Evaluation Protocol</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="panoramic_winners.html">2D Panoramic Track Winners</a></li>
+                            <li><a href="cbct_winners.html">3D Dental CBCT Track Winners</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="call_for_papers.html">Call for Papers</a></li>
-                <li><a href="accepted_papers.html">Accepted Papers</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle btn-flatten" type="button" id="paper-dropdown-menu"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Accepted Papers
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu nav-dropdown" aria-labelledby="paper-dropdown-menu">
+                            <li><a href="accepted_papers.html">Workshop Accepted Papers</a></li>
+                            <li><a href="challenge_publications.html">Challenge-Related Publications</a></li>
+                        </ul>
+                    </div>
+                </li>
+
                 <li><a href="organizers.html">Organizers</a></li>
                 <!--      以往挑战赛      -->
                 <li>
@@ -67,7 +97,8 @@
     </div>
 </nav>
 
-<div class="miccai2024-content"  id="miccai2024">
+
+<div class="miccai2024-content" id="miccai2024">
     <div class="slogan-content">
         <div style="text-align: center;">
             <h1 id="slogan-header">
@@ -81,9 +112,85 @@
         </div>
     </div>
 
+    <div class="alert-content main-content">
+        <button class="btn btn-default alert-btn">
+            <a href="files/STS2024-REGISTRATION-FORM.pdf">
+                <strong>Download</strong> the form to participate 🥳
+            </a>
+        </button>
+    </div>
+
     <div class="introduction-content main-content">
+        <h2 class="content-title">🤖 Call for Papers</h2>
         <p>
-            TBD
+            We invite participants to submit their work to the workshop as full papers.
+            Indeed, the prerequisite for submission is to participate in the challenge and successfully submit the
+            algorithm Docker and generate prediction results for the independent test set, otherwise we will desk reject
+            the corresponding submission.
+            <strong>BESIDES, PLEASE CHECK HERE REGULARLY IN CASE OF CHANGES TO POLICIES AND NEW INFORMATION</strong>.
+        </p>
+        <h3 class="content-subtitle"><i class="bi bi-bag-heart"></i> Topics</h3>
+        <p>
+            This workshop event, called <strong>Supervised and Semi-supervised Multi-Structure Segmentation and Landmark
+            Detection in Dental Data,</strong> is host three challenges of MICCAI 2024. Therefore,
+            as long as you successfully participate in any of these three challenges, you can submit your work:
+        </p>
+        <ul>
+            <li><a href="#" class="link-btn">🧚ToothFairy2</a>: Multi-Structure Segmentation in CBCT Volumes</li>
+            <li><a href="#" class="link-btn">🗿3DTeethLand24</a>: 3D Teeth Landmarks Detection Challenge</li>
+            <li><a href="#" class="link-btn">😎STS 2024</a>: Semi-supervised Teeth Segmentation</li>
+        </ul>
+        <h3 class="content-subtitle"><i class="bi bi-truck"></i> Submission Guidelines</h3>
+        <p>
+            <strong>Submission Site</strong>:
+            <a href="#" class="red-link">https://openreview.net/group?id=MICCAI.org/2024/Workshop/ToothFairy</a>
+        </p>
+        <p>
+            <strong>Important Dates</strong>:
+            All submissions will be handled electronically via the workshop's OpenReview Website.
+            The submission deadline is September 30, 2024.
+            The decision to authors will be release until October 15, 2024.
+        </p>
+        <p>
+            <strong>Paper Format</strong>:
+            Submitted papers (.pdf format) must use the Springer LNCS Latex Template.
+            Please remember to add an abbreviated paper Title and Authors.
+            Authors are prohibited from modifying the templates.
+            We are concerned about modifications to margins, line spacing, font type, and font size of the paper only.
+            If an author wishes to use other packages, it is the author's responsibility to ensure the additional
+            package does not alter the template.
+        </p>
+        <ul>
+            <li><a href="https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WuA4JS5uZpi" class="red-link">LaTex2e Proceedings Templates</a></li>
+            <li><a href="https://www.overleaf.com/read/qcwkpcvtbgck" class="red-link">Overleaf example submission paper with detailed instruction</a></li>
+        </ul>
+        <p>
+            <strong>Length</strong>:
+            Papers should be at least 8 pages, including all text and figures. There is no limit to the pages of references.
+
+        </p>
+        <p>
+            <strong>Review Process</strong>:
+            Our review process is single-blind, meaning that reviewers will know the identities of the authors,
+            but authors will not know the identities of the reviewers.
+
+
+        </p>
+        <h3 class="content-subtitle"><i class="bi bi-patch-question"></i> FAQ</h3>
+        <p>
+        <ul>
+            <li>
+                <p>
+                    <strong>Is supplementary material allowed?</strong>
+                </p>
+                <p>
+                    Yes. Submitting code and other supplementary materials that help reproducibility are highly
+                    encouraged. Supplementary material does not count towards the page limits. Note however that
+                    reviewers are not obliged to check the supplementary material.
+                </p>
+            </li>
+          <li>...</li>
+    </ul>
         </p>
     </div>
 
@@ -92,7 +199,7 @@
 <div class="footer-content" id="footer">
     <p style="text-align: center">
         Copyright @
-        <a href="https://www.cuz.edu.cn/" target="_blank">
+        <a href="https://www.cuz.edu.cn/" target="_blank" style="color: inherit;">
             College of Media Engineering, Communication University of Zhejiang, Hangzhou, 310018, China.
         </a>
     </p>

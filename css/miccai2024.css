@@ -12,6 +12,10 @@ body {
     margin-left: auto;
 }
 
+h1, h2, h3, h4, div {
+    line-height: 1.6;
+}
+
 .slogan-content {
     width: 100%;
     display: flex;
@@ -53,7 +57,10 @@ p {
 
 .alert-btn > a {
     color: #32825c;
-    line-height: 1;
+    line-height: 1.6;
+    font-size: 14pt;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .content-title {
@@ -64,8 +71,79 @@ p {
     font-weight: bold;
 }
 
+.red-link {
+    color: #cb2f37;
+}
+
+.link-btn {
+    color: #cb2f37;
+    background-color: #f2dede !important;
+    border-radius: 4px;
+}
+
+.p-panel-heading {
+    background-color: #32825c !important;
+    border-color:  #32825c !important;
+    color: white !important;
+    text-align: center;
+}
+
+.p-panel, .p-panel-body {
+    border-color:  #32825c !important;
+}
+
+.c-panel-heading {
+    background-color: #5b9bd5 !important;
+    border-color:  #5b9bd5 !important;
+    color: white !important;
+    text-align: center;
+}
+
+.c-panel, .c-panel-body {
+    border-color:  #5b9bd5 !important;
+}
+
+.small-text {
+    font-size: 12pt !important;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.p-join-btn {
+    font-size: 12pt;
+    width: 100% !important;
+    padding: 8px 0;
+    text-align: center;
+    color:  #32825c !important;
+    border-radius: 4px;
+    border: 1px solid #32825c !important;
+}
+
+.p-join-btn:hover {
+    background-color: #32825c !important;
+    color: white !important;
+    text-decoration: none;
+}
+
+.c-join-btn {
+    font-size: 12pt;
+    width: 100% !important;
+    padding: 8px 0;
+    text-align: center;
+    color:  #5b9bd5 !important;
+    border-radius: 4px;
+    border: 1px solid #5b9bd5 !important;
+}
+
+.c-join-btn:hover {
+    background-color: #5b9bd5 !important;
+    color: white !important;
+    text-decoration: none;
+}
+
 li {
     text-align: justify;
+    margin-bottom: 8px;
 }
 
 .track-btn {
@@ -108,6 +186,32 @@ table{
     background-color: #cb2f37;
 }
 
+.image-list-wrapper {
+    overflow: hidden;
+    height: 100px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.image-list {
+    padding-left: 0;
+    display: flex;
+    position: absolute;
+    animation: rolling 15s infinite linear;
+}
+
+.image-list > li {
+    list-style: none;
+    height: 100px;
+    float: left;
+    padding: 0 15px;
+}
+
+.image-list-item {
+    height: 100px;
+    width: auto;
+}
+
 /* 呼吸按钮样式 */
 .breathing-btn {
     display: inline-block;
@@ -115,11 +219,29 @@ table{
 }
 
 @-webkit-keyframes pulse {
-    0% {opacity: 0.9; transform: scale(1.05);}
+    0% {opacity: 0.9; transform: scale(0.95);}
 }
 
 @keyframes pulse {
-    0% {opacity: 0.9; transform: scale(1.05);}
+    0% {opacity: 0.9; transform: scale(0.95);}
+}
+
+@-webkit-keyframes rolling {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes rolling {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 767px) {
@@ -129,6 +251,19 @@ table{
 
     .row .col-md-6:last-of-type .track-btn {
         margin-top: 10px;
+    }
+
+    .image-list-wrapper {
+        height: 72px;
+    }
+
+    .image-list > li {
+        height: 72px;
+        padding: 0 12px;
+    }
+
+    .image-list-item {
+        height: 72px;
     }
 }
 
@@ -165,7 +300,6 @@ table{
 
 }
 
-
 @media (max-width: 500px) {
 
     .slogan-location {
@@ -183,5 +317,42 @@ table{
 
     .content-subtitle {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
     }
 }

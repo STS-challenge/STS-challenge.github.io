@@ -197,7 +197,7 @@ table{
     padding-left: 0;
     display: flex;
     position: absolute;
-    animation: rolling 15s infinite linear;
+    animation: rolling 20s infinite linear;
 }
 
 .image-list > li {

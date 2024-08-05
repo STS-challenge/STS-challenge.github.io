@@ -19,7 +19,12 @@
   <div>&nbsp;</div>
 </div
 
-Computer-aided diagnosis tools are becoming popular in modern dental practice, especially for treatment planning and comprehensive prognosis evaluation.
-However, the limited availability of large numbers of labeled cases constrains the development of deep learning algorithms for disease analysis.
-Therefore, we have organized the STS Challenge with a focus on semi-supervised learning.
-These series of challenges aim to develop efficient semi-supervised learning methods to advance computer-aided diagnostic tools in modern dentistry.
+Computer-aided diagnosis tools are popular in modern dental practice for treatment planning and prognosis evaluation.
+However, limited labeled cases hinder the development of deep learning algorithms.
+To address this, we organized the STS Challenge on semi-supervised learning to advance these diagnostic tools in dentistry.
+
+## Previous STS
+
+<b>STS 2023: Tooth region segmentation in 2D panoramic X-ray images and 3D dental CBCT scans _(still open)_.</b><br/>
+
+<a href='https://tianchi.aliyun.com/competition/entrance/532086'><img src='https://img.shields.io/badge/2D panoramic Xray track-Website-Green'></a> <a href='https://tianchi.aliyun.com/competition/entrance/532087'><img src='https://img.shields.io/badge/3D dental CBCT track-Website-orange'></a> <a href='https://arxiv.org/abs/2407.13246'><img src='https://img.shields.io/badge/Overiew Paper-PDF-purple'></a>

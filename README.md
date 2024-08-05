@@ -19,7 +19,7 @@
   <div>&nbsp;</div>
 </div
 
-Computer-aided diagnosis tools are popular in modern dental practice for treatment planning and prognosis evaluation.
+Computer-aided diagnosis tools are popular in dental practice for treatment planning and prognosis evaluation.
 However, limited labeled cases hinder the development of deep learning algorithms.
 To address this, we organized the STS Challenge on semi-supervised learning to advance these diagnostic tools in dentistry.
 

@@ -4,7 +4,7 @@
   <div align="center">
     <b>Codabench website</b>
     <sup>
-      <a href="[https://openmmlab.com](https://www.codabench.org/competitions/3024)">
+      <a href="https://www.codabench.org/competitions/3024">
         <i>HOT</i>
       </a>
     </sup>

@@ -44,15 +44,16 @@ p {
     text-align: justify;
 }
 
-.alert-btn {
+.alert-btn, .alert-btn:hover {
     margin-top: 20px;
     width: 100%;
-    color: white;
     text-align: center;
     padding: 15px 0;
     background-color: #dff0d8 !important;
     border-color: #d6e9c6 !important;
     overflow: hidden;
+    color: #32825c;
+    line-height: 1.6;
 }
 
 .alert-btn > a {
@@ -61,6 +62,10 @@ p {
     font-size: 14pt;
     width: 100%;
     margin-bottom: 20px;
+}
+
+.alert-link {
+    color: #32825c;
 }
 
 .content-title {
@@ -197,7 +202,7 @@ table{
     padding-left: 0;
     display: flex;
     position: absolute;
-    animation: rolling 20s infinite linear;
+    animation: rolling 15s infinite linear;
 }
 
 .image-list > li {

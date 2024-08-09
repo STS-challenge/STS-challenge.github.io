@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <title>Semi-supervised Teeth Segmentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/logo.png" type="image/png">
-    <meta name="author" content="STS Challenge">
-    <meta name="description" content="Website for STS Challenge at MICCAI Conferences.">
-    <meta name="keywords" content="MICCAI, MICCAI 2023, MICCAI 2024, STS, Semi-supervised Learning, Segmentation, Teeth Segmentation, Panoramic X-ray, Dental CBCT, Challenge">
     <!--  公开对基本依赖    -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script type="text/javascript" src="../jquery/jquery-1.12.4.min.js"></script>
@@ -43,6 +39,8 @@
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
+                <!--                <li><a href="panoramic_track.html">Panoramic Track🔥</a></li>-->
+                <!--                <li><a href="cbct_track.html">CBCT Track🔥</a></li>-->
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -111,28 +109,84 @@
     </div>
 
     <div class="alert-content main-content">
-        <button class="btn btn-default alert-btn" type="button" data-toggle="collapse" data-target="#alertCollapseContent" aria-expanded="false" aria-controls="alertCollapseContent">
-            <strong>Challenge On</strong>! You can click to Join. 🥳
+        <button class="btn btn-default alert-btn">
+            <a href="files/STS2024-REGISTRATION-FORM.pdf">
+                <strong>Download</strong> the form to participate 🥳
+            </a>
         </button>
-        <div class="collapse" id="alertCollapseContent">
-            <p class="well" style="text-align: justify">
-                You should ⬇️<a href="files/STS2024-REGISTRATION-FORM.pdf" class="alert-link">download</a> the form, sign it,
-                and then, send it to ✅<span class="alert-link">SemiTeethSegChallenge@aliyun.com</span>.
-                Once submitted, you will get our challenge dataset download link.
-                For more details, please check below.
-            </p>
-        </div>
     </div>
-
     <div class="introduction-content main-content">
-        <h2 class="content-subtitle"></h2>
-        <p>
-            TBD: The 2D Panoramic X-ray Track has not yet concluded, and the final winner remains unknown. We will
-            announce the ultimate winner during the Workshop event.
+        <h2 class="content-title">
+            2D Panoramic Xray
             <a href="https://www.codabench.org/competitions/3024/" class="breathing-btn">
                 <span class="badge">👉 CodaBench</span>
             </a>
+        </h2>
+        <p>
+            For this track, we test the model's teeth instance identification and segmentation capabilities using
+            panoramic Xray images with different ages and medical centers. Among them, the test images may contain
+            cases of caries, and some images may also have missing teeth or incomplete teeth.
+            We aim to test different abilities with different testing images:
+            <strong>Location</strong>, <strong>Segmentation</strong>, <strong>Classification</strong>.
         </p>
+        <p>
+            In specific, we provide 2450 high-resolution panoramic Xray images, including 2350 unlabeled training sets,
+            30 labeled training sets, 20 validation sets, and 100 independent test sets.
+            All images are in JPG format, and the annotation files are in JSON format, following the format of Labelme.
+        </p>
+        <h3 class="content-subtitle">Evaluation</h3>
+        <p>
+            The segmentation inference results are evaluated using Dice Similarity Coefficient (DSC),
+            Normalized Surface Dice (NSD), Intersection over Union (IoU), Panoptic Quality (PQ),
+            Identification Accuracy (IA), Running time (RT) and Area under GPU memory-time curve (GPU-area).
+            All metrics will be used to compute the ranking.
+            We will release the code on how to calculate the 10 performance metrics with the python3 version.
+            The ranking scheme includes the following five steps:
+        </p>
+        <ul>
+            <li>
+                Step 1:
+                In order to maintain consistency with our previous challenge and assess the algorithm's performance at
+                the image level, our evaluation framework will first initially compute three metrics, Dice, IoU and NSD,
+                on a per-image basis to derive the algorithm's Dice (image_Dice), IoU (image_IoU) and NSD (image_NSD)
+                scores at image-level.
+            </li>
+            <li>
+                Step 2:
+                Next, given the challenge's focus on instance-level analysis, we also will employ a greedy algorithm to
+                match the corresponding prediction results with the ground truth, allowing for the calculation of Dice
+                (instance_Dice), IoU (instance_IoU), NSD (instance_NSD), IA (instance_IA) and PQ (instance_PQ) scores at
+                the instance level.
+            </li>
+            <li>
+                Step 3:
+                Then, the evaluation will include measurements of running time (RT) and GPU consumption (GPU_area)
+                for each algorithm.
+            </li>
+            <li>
+                Step 4:
+                Take the mean of the ten metrics over the test cases, and rank separately among the teams.
+            </li>
+            <li>
+                Step 5:
+                A final overall rank is given by taking the average of the four ranks.
+                In the case of equal average rankings for two teams, they are considered tied.
+            </li>
+        </ul>
+        <h3 class="content-subtitle">Awards</h3>
+        <p>
+            To determine the winners, we will rank the participants based on their final algorithm on the independent test
+            set.
+            We have planned a range of comprehensive awards for this track, which we hope will attract and motivate
+            you to participate.We look forward to your involvement and
+            to seeing the outstanding work that will emerge from this competition.
+        </p>
+        <ul>
+            <li>Cash: $500 for the 1st participant.</li>
+            <li>Certificates: The top 10 participants will receive a certificate.</li>
+            <li>Oral presentation: Top-performing participants will be invited to participate in the presentation</li>
+            <li>Paper publication: Teams with outstanding performance can submit papers to our workshops and participate in review papers.</li>
+        </ul>
     </div>
 
 </div>

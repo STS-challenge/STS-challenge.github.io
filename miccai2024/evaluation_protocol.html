@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <title>Semi-supervised Teeth Segmentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/logo.png" type="image/png">
-    <meta name="author" content="STS Challenge">
-    <meta name="description" content="Website for STS Challenge at MICCAI Conferences.">
-    <meta name="keywords" content="MICCAI, MICCAI 2023, MICCAI 2024, STS, Semi-supervised Learning, Segmentation, Teeth Segmentation, Panoramic X-ray, Dental CBCT, Challenge">
     <!--  公开对基本依赖    -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script type="text/javascript" src="../jquery/jquery-1.12.4.min.js"></script>
@@ -43,6 +39,8 @@
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
+                <!--                <li><a href="panoramic_track.html">Panoramic Track🔥</a></li>-->
+                <!--                <li><a href="cbct_track.html">CBCT Track🔥</a></li>-->
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -111,17 +109,11 @@
     </div>
 
     <div class="alert-content main-content">
-        <button class="btn btn-default alert-btn" type="button" data-toggle="collapse" data-target="#alertCollapseContent" aria-expanded="false" aria-controls="alertCollapseContent">
-            <strong>Challenge On</strong>! You can click to Join. 🥳
+        <button class="btn btn-default alert-btn">
+            <a href="files/STS2024-REGISTRATION-FORM.pdf">
+                <strong>Download</strong> the form to participate 🥳
+            </a>
         </button>
-        <div class="collapse" id="alertCollapseContent">
-            <p class="well" style="text-align: justify">
-                You should ⬇️<a href="files/STS2024-REGISTRATION-FORM.pdf" class="alert-link">download</a> the form, sign it,
-                and then, send it to ✅<span class="alert-link">SemiTeethSegChallenge@aliyun.com</span>.
-                Once submitted, you will get our challenge dataset download link.
-                For more details, please check below.
-            </p>
-        </div>
     </div>
 
     <div class="introduction-content main-content">
@@ -162,11 +154,6 @@
             This means that only objects with consistent predicted categories and a Mask IoU greater than 0.5 will have
             their #{ D ∩ G } counts + 1.
         </p>
-        <p>
-            🔔Now, we have updated and released the evaluation code and submission instructions. If you encounter a bug or
-            have questions about the evaluation metrics, you can check out our Github:
-            <a href="https://github.com/STS-challenge/STS" class="red-link">https://github.com/STS-challenge/STS</a>.
-        </p>
 
         <h3 class="content-subtitle">🏆 Ranking Scheme</h3>
         <p>
@@ -187,7 +174,7 @@
                 Step 2:
                 Next, given the challenge's focus on instance-level analysis, we also will employ a greedy algorithm to
                 match the corresponding prediction results with the ground truth, allowing for the calculation of Dice
-                (instance_Dice), IoU (instance_IoU), NSD (instance_NSD) and IA (instance_IA) scores at
+                (instance_Dice), IoU (instance_IoU), NSD (instance_NSD), IA (instance_IA) and PQ (instance_PQ) scores at
                 the instance level.
             </li>
             <li>
@@ -197,11 +184,11 @@
             </li>
             <li>
                 Step 4:
-                Take the mean of the nine metrics over the test cases, and rank separately among the teams.
+                Take the mean of the ten metrics over the test cases, and rank separately among the teams.
             </li>
             <li>
                 Step 5:
-                A final overall rank is given by taking the average of the nine ranks.
+                A final overall rank is given by taking the average of the four ranks.
                 In the case of equal average rankings for two teams, they are considered tied.
             </li>
         </ul>

@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <title>Semi-supervised Teeth Segmentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/logo.png" type="image/png">
-    <meta name="author" content="STS Challenge">
-    <meta name="description" content="Website for STS Challenge at MICCAI Conferences.">
-    <meta name="keywords" content="MICCAI, MICCAI 2023, MICCAI 2024, STS, Semi-supervised Learning, Segmentation, Teeth Segmentation, Panoramic X-ray, Dental CBCT, Challenge">
     <!--  公开对基本依赖    -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script type="text/javascript" src="../jquery/jquery-1.12.4.min.js"></script>
@@ -43,6 +39,8 @@
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
+                <!--                <li><a href="panoramic_track.html">Panoramic Track🔥</a></li>-->
+                <!--                <li><a href="cbct_track.html">CBCT Track🔥</a></li>-->
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -111,57 +109,17 @@
     </div>
 
     <div class="alert-content main-content">
-        <button class="btn btn-default alert-btn" type="button" data-toggle="collapse" data-target="#alertCollapseContent" aria-expanded="false" aria-controls="alertCollapseContent">
-            <strong>Challenge On</strong>! You can click to Join. 🥳
+        <button class="btn btn-default alert-btn">
+            <a href="files/STS2024-REGISTRATION-FORM.pdf">
+                <strong>Download</strong> the form to participate 🥳
+            </a>
         </button>
-        <div class="collapse" id="alertCollapseContent">
-            <p class="well" style="text-align: justify">
-                You should ⬇️<a href="files/STS2024-REGISTRATION-FORM.pdf" class="alert-link">download</a> the form, sign it,
-                and then, send it to ✅<span class="alert-link">SemiTeethSegChallenge@aliyun.com</span>.
-                Once submitted, you will get our challenge dataset download link.
-                For more details, please check below.
-            </p>
-        </div>
     </div>
 
     <div class="publication-content main-content">
         <h2 class="content-title">📖 Challenge Publications</h2>
         <p>
-            The STS Challenge was launched in 2023, with the aim of fostering the development of novel, robust
-            teeth semi-supervised learning algorithms, and helping the developers with the evaluation of their new
-            algorithmic developments.
-            There are several publications related to the STS Challenge, including:
-        </p>
-        <p>
-            [1] Yaqi Wang*, Yifan Zhang, Xiaodiao Chen, Shuai Wang, Dahong Qian, Fan Ye, Feng Xu, Hongyuan Zhang, Qianni
-            Zhang, Chengyu Wu, Yunxiang Li, Weiwei Cui, Shan Luo, Chengkai Wang, Tianhao Li, Yi Liu, Xiang Feng, Huiyu
-            Zhou, Dongyun Liu, Qixuan Wang, Zhouhao Lin, Wei Song, Yuanlin Li, Bing Wang, Chunshi Wang, Qiupu Chen and
-            Mingqian Li. STS MICCAI 2023 Challenge: Grand challenge on 2D and 3D semi-supervised tooth segmentation.
-            Arxiv, 2024.
-        </p>
-        <p>
-            [2] Yifan Zhang, Fan Ye, Lingxiao Chen, Feng Xu, Xiaodiao Chen, Hongkun Wu, Mingguo Cao, Yunxiang Li, Yaqi
-            Wang* and Xingru Huang*.
-            <a href="https://www.nature.com/articles/s41597-023-02237-5" class="red-link" target="_blank">
-                Children's dental panoramic radiographs dataset for caries segmentation and dental disease detection</a>.
-            Scientific Data, 2023.
-        </p>
-        <p>
-            [3] Weiwei Cui, Yaqi Wang*, Qianni Zhang, Huiyu Zhou, Dan Song, Xingyong Zuo, Gangyong Jia and Liaoyuan
-            Zeng*.
-            <a href="https://link.springer.com/chapter/10.1007/978-3-031-13841-6_18" class="red-link" target="_blank">
-                CTooth: a fully annotated 3d dataset and benchmark for tooth volume
-                segmentation on cone beam computed tomography images</a>.
-            International Conference on Intelligent Robotics and Applications, 2022.
-        </p>
-        <p>
-            [3] Weiwei Cui, Yaqi Wang*, Yilong Li, Dan Song, Xingyong Zuo, Jiaojiao Wang, Yifan Zhang, Huiyu Zhou, Bung
-            san Chong, Liaoyuan Zeng and Qianni Zhang.
-            <a href="https://link.springer.com/chapter/10.1007/978-3-031-13841-6_18" class="red-link" target="_blank">
-                CTooth+: A Large-Scale Dental Cone Beam Computed Tomography Dataset and Benchmark for Tooth Volume
-                Segmentation</a>.
-            MICCAI Workshop on Data Augmentation, Labelling, and Imperfections, 2022.
-
+            TBD
         </p>
     </div>
 
@@ -170,28 +128,12 @@
         <p>
             We appreciate the support from the National Natural Science Foundation of China (No.62206242) and China Science
             and Technology Foundation of Sichuan Province (No.2022YFS0116).
-            We also extend our heartfelt gratitude to Hangzhou Dental Hospital Co. Ltd, Hangzhou Qiantang Dental
-            Hospital, Communication University of Zhejiang for providing open datasets.
+            We also extend our heartfelt gratitude to Hangzhou Dental Hospital Co.,Ltd、Hangzhou Qiantang Dental
+            Hospital、Communication University of Zhejiang for providing open datasets.
             In addition,
-            We gratefully acknowledge the support of BASIC.AI, which offers an all-in-one smart data annotation platform.
+            We gratefully acknowledge the support of BASIC.AI, which offers an all-in-one smart data annotation platform, for their support.
+            Only the organizers and members of their immediate team have access to test case labels.
         </p>
-        <div class="image-list-wrapper">
-            <ul class="image-list">
-                <li><img src="images/1.png" alt="1-image" class="image-list-item"></li>
-                <li><img src="images/2.png" alt="2-image" class="image-list-item"></li>
-                <li><img src="images/3.jpeg" alt="3-image" class="image-list-item"></li>
-                <li><img src="images/4.png" alt="4-image" class="image-list-item"></li>
-                <li><img src="images/5.svg" alt="5-image" class="image-list-item"></li>
-                <li><img src="images/6.png" alt="6-image" class="image-list-item"></li>
-
-                <li><img src="images/1.png" alt="1-image" class="image-list-item"></li>
-                <li><img src="images/2.png" alt="2-image" class="image-list-item"></li>
-                <li><img src="images/3.jpeg" alt="3-image" class="image-list-item"></li>
-                <li><img src="images/4.png" alt="4-image" class="image-list-item"></li>
-                <li><img src="images/5.svg" alt="5-image" class="image-list-item"></li>
-                <li><img src="images/6.png" alt="6-image" class="image-list-item"></li>
-            </ul>
-        </div>
     </div>
 
 </div>

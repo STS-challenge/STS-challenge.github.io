@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Semi-supervised Teeth Segmentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <meta name="author" content="STS Challenge">
+    <meta name="description" content="Website for STS Challenge at MICCAI Conferences.">
+    <meta name="keywords" content="MICCAI, MICCAI 2023, MICCAI 2024, STS, Semi-supervised Learning, Segmentation, Teeth Segmentation, Panoramic X-ray, Dental CBCT, Challenge">
     <!--  公开对基本依赖    -->
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script type="text/javascript" src="../jquery/jquery-1.12.4.min.js"></script>
@@ -39,8 +43,6 @@
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
-                <!--                <li><a href="panoramic_track.html">Panoramic Track🔥</a></li>-->
-                <!--                <li><a href="cbct_track.html">CBCT Track🔥</a></li>-->
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -111,11 +113,17 @@
     </div>
 
     <div class="alert-content main-content">
-        <button class="btn btn-default alert-btn">
-            <a href="files/STS2024-REGISTRATION-FORM.pdf">
-                <strong>Download</strong> the form to participate 🥳
-            </a>
+        <button class="btn btn-default alert-btn" type="button" data-toggle="collapse" data-target="#alertCollapseContent" aria-expanded="false" aria-controls="alertCollapseContent">
+            <strong>Challenge On</strong>! You can click to Join. 🥳
         </button>
+        <div class="collapse" id="alertCollapseContent">
+            <p class="well" style="text-align: justify">
+                You should ⬇️<a href="files/STS2024-REGISTRATION-FORM.pdf" class="alert-link">download</a> the form, sign it,
+                and then, send it to our contact email.
+                Once submitted, you'll get our challenge dataset download link.
+                For more details, please check below.
+            </p>
+        </div>
     </div>
 
     <div class="introduction-content main-content">

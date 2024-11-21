@@ -110,16 +110,30 @@
         </div>
     </div>
 
+<!--    <div class="alert-content main-content">-->
+<!--        <button class="btn btn-default alert-btn" type="button" data-toggle="collapse" data-target="#alertCollapseContent" aria-expanded="false" aria-controls="alertCollapseContent">-->
+<!--            <strong>Challenge On</strong>! You can click to Join. 🥳-->
+<!--        </button>-->
+<!--        <div class="collapse" id="alertCollapseContent">-->
+<!--            <p class="well" style="text-align: justify">-->
+<!--                You should ⬇️<a href="files/STS2024-REGISTRATION-FORM.pdf" class="alert-link">download</a> the form, sign it,-->
+<!--                and then, send it to our contact email.-->
+<!--                Once submitted, you'll get our challenge dataset download link.-->
+<!--                For more details, please check below.-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+
     <div class="alert-content main-content">
-        <button class="btn btn-default alert-btn" type="button" data-toggle="collapse" data-target="#alertCollapseContent" aria-expanded="false" aria-controls="alertCollapseContent">
-            <strong>Challenge On</strong>! You can click to Join. 🥳
-        </button>
-        <div class="collapse" id="alertCollapseContent">
-            <p class="well" style="text-align: justify">
-                You should ⬇️<a href="files/STS2024-REGISTRATION-FORM.pdf" class="alert-link">download</a> the form, sign it,
-                and then, send it to our contact email.
-                Once submitted, you'll get our challenge dataset download link.
-                For more details, please check below.
+        <div class="btn btn-default alert-btn">
+            <p style="text-align: center; margin-bottom: 0;">
+                🎉<strong>Result Release</strong>!🎉
+                <a href="panoramic_winners.html" class="breathing-btn">
+                    <span class="badge" style="font-size: 11pt">👉 Panoramic</span>
+                </a>
+                <a href="cbct_winners.html" class="breathing-btn">
+                    <span class="badge" style="font-size: 11pt">👉 CBCT</span>
+                </a>
             </p>
         </div>
     </div>
@@ -132,37 +146,352 @@
             algorithmic developments.
             There are several publications related to the STS Challenge, including:
         </p>
-        <p>
-            [1] Yaqi Wang*, Yifan Zhang, Xiaodiao Chen, Shuai Wang, Dahong Qian, Fan Ye, Feng Xu, Hongyuan Zhang, Qianni
-            Zhang, Chengyu Wu, Yunxiang Li, Weiwei Cui, Shan Luo, Chengkai Wang, Tianhao Li, Yi Liu, Xiang Feng, Huiyu
-            Zhou, Dongyun Liu, Qixuan Wang, Zhouhao Lin, Wei Song, Yuanlin Li, Bing Wang, Chunshi Wang, Qiupu Chen and
-            Mingqian Li. STS MICCAI 2023 Challenge: Grand challenge on 2D and 3D semi-supervised tooth segmentation.
-            Arxiv, 2024.
-        </p>
-        <p>
-            [2] Yifan Zhang, Fan Ye, Lingxiao Chen, Feng Xu, Xiaodiao Chen, Hongkun Wu, Mingguo Cao, Yunxiang Li, Yaqi
-            Wang* and Xingru Huang*.
-            <a href="https://www.nature.com/articles/s41597-023-02237-5" class="red-link" target="_blank">
-                Children's dental panoramic radiographs dataset for caries segmentation and dental disease detection</a>.
-            Scientific Data, 2023.
-        </p>
-        <p>
-            [3] Weiwei Cui, Yaqi Wang*, Qianni Zhang, Huiyu Zhou, Dan Song, Xingyong Zuo, Gangyong Jia and Liaoyuan
-            Zeng*.
-            <a href="https://link.springer.com/chapter/10.1007/978-3-031-13841-6_18" class="red-link" target="_blank">
-                CTooth: a fully annotated 3d dataset and benchmark for tooth volume
-                segmentation on cone beam computed tomography images</a>.
-            International Conference on Intelligent Robotics and Applications, 2022.
-        </p>
-        <p>
-            [3] Weiwei Cui, Yaqi Wang*, Yilong Li, Dan Song, Xingyong Zuo, Jiaojiao Wang, Yifan Zhang, Huiyu Zhou, Bung
-            san Chong, Liaoyuan Zeng and Qianni Zhang.
-            <a href="https://link.springer.com/chapter/10.1007/978-3-031-13841-6_18" class="red-link" target="_blank">
-                CTooth+: A Large-Scale Dental Cone Beam Computed Tomography Dataset and Benchmark for Tooth Volume
-                Segmentation</a>.
-            MICCAI Workshop on Data Augmentation, Labelling, and Imperfections, 2022.
+        <ul class="paper-list">
+            <li class="paper-item">
+                <p class="paper-title">STS MICCAI 2023 Challenge: Grand Challenge on 2D and 3D Semi-Supervised Tooth Segmentation</p>
+                <p class="paper-authors">Yaqi Wang*, Yifan Zhang, Xiaodiao Chen, Shuai Wang, Dahong Qian, Fan Ye, Feng Xu, Hongyuan Zhang, Qianni
+                    Zhang, Chengyu Wu, Yunxiang Li, Weiwei Cui, Shan Luo, Chengkai Wang, Tianhao Li, Yi Liu, Xiang Feng, Huiyu
+                    Zhou, Dongyun Liu, Qixuan Wang, Zhouhao Lin, Wei Song, Yuanlin Li, Bing Wang, Chunshi Wang, Qiupu Chen and
+                    Mingqian Li</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://arxiv.org/abs/2407.13246" class="paper-arxiv-link"><img src="icons/arxiv.svg" class="paper-arxiv-icon" alt="arXiv">arXiv</a>]</li>
+                    <li>[<a href="https://github.com/yefan222/MICCAI-2023-STS" class="paper-github-link"><img src="icons/github.png" class="paper-github-icon" alt="arXiv">Code</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#wang2024sts" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="wang2024sts" class="paper-cite-bib panel-collapse collapse">@article{wang2024sts,
+                    title={STS MICCAI 2023 Challenge: Grand challenge on 2D and 3D semi-supervised tooth segmentation},
+                    author={Wang, Yaqi and Zhang, Yifan and Chen, Xiaodiao and Wang, Shuai and Qian, Dahong and Ye, Fan and Xu, Feng and Zhang, Hongyuan and Zhang, Qianni and Wu, Chengyu and others},
+                    journal={arXiv preprint arXiv:2407.13246},
+                    year={2024}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title"> Children's Dental Panoramic Radiographs Dataset for Caries Segmentation and Dental Disease Detection</p>
+                <p class="paper-authors">Yifan Zhang, Fan Ye, Lingxiao Chen, Feng Xu, Xiaodiao Chen, Hongkun Wu, Mingguo Cao, Yunxiang Li, Yaqi Wang* and Xingru Huang*</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://www.nature.com/articles/s41597-023-02237-5" class="paper-pdf-link"><img src="icons/pdf.png" class="paper-pdf-icon" alt="PDF">PDF</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#zhang2023children" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="zhang2023children" class="paper-cite-bib panel-collapse collapse">@article{zhang2023children,
+                    title={Children’s dental panoramic radiographs dataset for caries segmentation and dental disease detection},
+                    author={Zhang, Yifan and Ye, Fan and Chen, Lingxiao and Xu, Feng and Chen, Xiaodiao and Wu, Hongkun and Cao, Mingguo and Li, Yunxiang and Wang, Yaqi and Huang, Xingru},
+                    journal={Scientific Data},
+                    volume={10},
+                    number={1},
+                    pages={380},
+                    year={2023},
+                    publisher={Nature Publishing Group UK London}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">CTooth+: A Large-Scale Dental Cone Beam Computed Tomography Dataset and Benchmark for Tooth Volume Segmentation</p>
+                <p class="paper-authors">Weiwei Cui, Yaqi Wang*, Yilong Li, Dan Song, Xingyong Zuo, Jiaojiao Wang, Yifan Zhang, Huiyu Zhou, Bung san Chong, Liaoyuan Zeng and Qianni Zhang</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://arxiv.org/pdf/2208.01643" class="paper-arxiv-link"><img src="icons/arxiv.svg" class="paper-arxiv-icon" alt="arXiv">arXiv</a>]</li>
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-17027-0_7" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a href="https://github.com/liangjiubujiu/CTooth" class="paper-github-link"><img src="icons/github.png" class="paper-github-icon" alt="Github">Code</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#cui2022ctooth" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="cui2022ctooth" class="paper-cite-bib panel-collapse collapse">@inproceedings{cui2022ctooth+,
+                    title={Ctooth+: A large-scale dental cone beam computed tomography dataset and benchmark for tooth volume segmentation},
+                    author={Cui, Weiwei and Wang, Yaqi and Li, Yilong and Song, Dan and Zuo, Xingyong and Wang, Jiaojiao and Zhang, Yifan and Zhou, Huiyu and Chong, Bung san and Zeng, Liaoyuan and others},
+                    booktitle={MICCAI Workshop on Data Augmentation, Labelling, and Imperfections},
+                    pages={64--73},
+                    year={2022},
+                    organization={Springer}
+                    }
+                </div>
+            </li>
+        </ul>
+    </div>
 
+    <div class="publication-content main-content">
+        <h2 class="content-title">1️⃣ STS 2023 Workshop</h2>
+        <p>
+            This book constitutes the proceedings of the First MICCAI 2023 Challenge on Semi-supervised Tooth Segmentation, STS 2023, held in Conjunction with MICCAI 2023, in Vancouver, BC, Canada, on October 8, 2023.
+            The papers were written by participants in the STS challenge to describe their solutions for automatic teeth segmentation using the official training dataset released for this purpose.
         </p>
+        <ul class="paper-list">
+            <li class="paper-item">
+                <p class="paper-title">Convolutional Neural Network-Based Multi-scale Semantic Segmentation for Two-Dimensional Panoramic X-Rays of Teeth</p>
+                <p class="paper-authors">Qixuan Wang, Yangzheng Zhao, Zhuofan Zhang</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_1" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#wang2023convolutional" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="wang2023convolutional" class="paper-cite-bib panel-collapse collapse">@incollection{wang2023convolutional,
+                    title={Convolutional Neural Network-Based Multi-scale Semantic Segmentation for Two-Dimensional Panoramic X-Rays of Teeth},
+                    author={Wang, Qixuan and Zhao, Yangzheng and Zhang, Zhuofan},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={1--13},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">TB-FPN: Enhancing Tooth Segmentation with Cascade Boundary-Aware FPN</p>
+                <p class="paper-authors">Xinxu Cai, Yisong Zhang, Zeyuan Guan, Qi Sun, Zhenshen Qu</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_2" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a href="https://github.com/Dew026/TB-FPN" class="paper-github-link"><img src="icons/github.png" class="paper-github-icon" alt="Github">Code</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#cai2023tb" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="cai2023tb" class="paper-cite-bib panel-collapse collapse">@incollection{cai2023tb,
+                    title={TB-FPN: Enhancing Tooth Segmentation with Cascade Boundary-Aware FPN},
+                    author={Cai, Xinxu and Zhang, Yisong and Guan, Zeyuan and Sun, Qi and Qu, Zhenshen},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={14--24},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">Perform Special Post-processing After Tooth Segmentation</p>
+                <p class="paper-authors">Bing Wang, Chi Zhang, Weili Shi</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_3" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#wang2023perform" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="wang2023perform" class="paper-cite-bib panel-collapse collapse">@incollection{wang2023perform,
+                    title={Perform Special Post-processing After Tooth Segmentation},
+                    author={Wang, Bing and Zhang, Chi and Shi, Weili},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={25--35},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">A Multi-stage Framework for 3D Individual Tooth Segmentation in Dental CBCT</p>
+                <p class="paper-authors">Chunshi Wang, Bin Zhao, Shuxue Ding</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_4" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#wang2023multi" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="wang2023multi" class="paper-cite-bib panel-collapse collapse">@incollection{wang2023multi,
+                    title={A Multi-stage Framework for 3D Individual Tooth Segmentation in Dental CBCT},
+                    author={Wang, Chunshi and Zhao, Bin and Ding, Shuxue},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={36--45},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">Preprocessing of Prior Knowledge Before Semi-supervised Tooth Segmentation</p>
+                <p class="paper-authors">Bing Wang, Chi Zhang, Weili Shi</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_5" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#wang2023preprocessing" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="wang2023preprocessing" class="paper-cite-bib panel-collapse collapse">@incollection{wang2023preprocessing,
+                    title={Preprocessing of Prior Knowledge Before Semi-supervised Tooth Segmentation},
+                    author={Wang, Bing and Zhang, Chi and Shi, Weili},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={46--57},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">A Semi-supervised Tooth Segmentation Method Based on Entropy-Guided Mean Teacher and Weakly Mutual Consistency Network</p>
+                <p class="paper-authors">Mingqian Li, Zhiqian Yan, Qinghang Lu, Qiongxiong Ma, Liang Guo, Qingmao Zhang</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_6" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a href="https://github.com/59-lmq/STS2023-WMCNet" class="paper-github-link"><img src="icons/github.png" class="paper-github-icon" alt="Github">Code</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#li2023semi" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="li2023semi" class="paper-cite-bib panel-collapse collapse">@incollection{li2023semi,
+                    title={A Semi-supervised Tooth Segmentation Method Based on Entropy-Guided Mean Teacher and Weakly Mutual Consistency Network},
+                    author={Li, Mingqian and Yan, Zhiqian and Lu, Qinghang and Ma, Qiongxiong and Guo, Liang and Zhang, Qingmao},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={58--71},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">MsNet: Multi-stage Learning from Seldom Labeled Data for 3D Tooth Segmentation in Dental Cone Beam Computed Tomography</p>
+                <p class="paper-authors">Xuewei Kang, Bingjiang Qiu, Lisha Yao, Zhihong Chen, Chu Han, Zaiyi Liu</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_7" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#kang2023msnet" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="kang2023msnet" class="paper-cite-bib panel-collapse collapse">@incollection{kang2023msnet,
+                    title={MsNet: Multi-stage Learning from Seldom Labeled Data for 3D Tooth Segmentation in Dental Cone Beam Computed Tomography},
+                    author={Kang, Xuewei and Qiu, Bingjiang and Yao, Lisha and Chen, Zhihong and Han, Chu and Liu, Zaiyi},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={72--82},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">Diffusion-Based Conv-Former Dual-Encode U-Net: DDPM for Level Set Evolution Mapping MICCAI STS 2023 Challenge</p>
+                <p class="paper-authors">Junlin Li, Weixin Tian, Junliang Li, Yuan He, Wanglin Ke</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_8" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a href="https://github.com/aoxipo/AITOOTH" class="paper-github-link"><img src="icons/github.png" class="paper-github-icon" alt="Github">Code</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#li2023diffusion" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="li2023diffusion" class="paper-cite-bib panel-collapse collapse">@incollection{li2023diffusion,
+                    title={Diffusion-Based Conv-Former Dual-Encode U-Net: DDPM for Level Set Evolution Mapping MICCAI STS 2023 Challenge},
+                    author={Li, Junlin and Tian, Weixin and Li, Junliang and He, Yuan and Ke, Wanglin},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={83--95},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">Semi-supervised 3D Tooth Segmentation Using nn-UNet with Axial Attention and Positional Correction</p>
+                <p class="paper-authors">Qiupu Chen, Yimou Wang, Jun Xu, Qiankun Li</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_9" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a href="https://github.com/qpuchen/nnUNet_att_position_correction" class="paper-github-link"><img src="icons/github.png" class="paper-github-icon" alt="Github">Code</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#chen2023semi" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="chen2023semi" class="paper-cite-bib panel-collapse collapse">@incollection{chen2023semi,
+                    title={Semi-supervised 3D Tooth Segmentation Using nn-UNet with Axial Attention and Positional Correction},
+                    author={Chen, Qiupu and Wang, Yimou and Xu, Jun and Li, Qiankun},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={96--109},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">Boundary Feature Fusion Network for Tooth Image Segmentation</p>
+                <p class="paper-authors">Dongping Zhang, Zheng Li, Fangao Zeng, Yutong Wei</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_10" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a href="https://www.arxiv.org/abs/2409.03982" class="paper-arxiv-link"><img src="icons/arxiv.svg" class="paper-arxiv-icon" alt="arXiv">arXiv</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#zhang2023boundary" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="zhang2023boundary" class="paper-cite-bib panel-collapse collapse">@incollection{zhang2023boundary,
+                    title={Boundary feature fusion network for tooth image segmentation},
+                    author={Zhang, Dongping and Li, Zheng and Zeng, Fangao and Wei, Yutong},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={110--123},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">Self-training Based Semi-Supervised Learning and U-Net with Denoiser for Teeth Segmentation in X-Ray Image</p>
+                <p class="paper-authors">Zhouhao Lin, Yibo Yang, Anrui Huang, Zeyang Shou, Qizhong Zhang</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_11" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#lin2023self" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="lin2023self" class="paper-cite-bib panel-collapse collapse">@incollection{lin2023self,
+                    title={Self-training Based Semi-Supervised Learning and U-Net with Denoiser for Teeth Segmentation in X-Ray Image},
+                    author={Lin, Zhouhao and Yang, Yibo and Huang, Anrui and Shou, Zeyang and Zhang, Qizhong},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={124--132},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">UX-CNet: Effective Edge Information Acquisition for Teeth Image Segmentation</p>
+                <p class="paper-authors">Hao Leng, Lianghuang Huang</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_12" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#leng2023ux" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="leng2023ux" class="paper-cite-bib panel-collapse collapse">@incollection{leng2023ux,
+                    title={UX-CNet: Effective Edge Information Acquisition for Teeth Image Segmentation},
+                    author={Leng, Hao and Huang, Lianghuang},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={133--144},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">2D Teeth Segmentation Base on Half-Image Approach and VCMix-Net+</p>
+                <p class="paper-authors">Mengzhuo Shen, Haocheng Li, Qing Li, Shidong Zhang, Tairong Xing, Zhenzhen Wan</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_13" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#shen20232d" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="shen20232d" class="paper-cite-bib panel-collapse collapse">@incollection{shen20232d,
+                    title={2D Teeth Segmentation Base on Half-Image Approach and VCMix-Net+},
+                    author={Shen, Mengzhuo and Li, Haocheng and Li, Qing and Zhang, Shidong and Xing, Tairong and Wan, Zhenzhen},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={145--155},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">Automated Dental CBCT Segmentation Using Pseudo Labeling Method</p>
+                <p class="paper-authors">Weiyan Feng</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_14" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#feng2023automated" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="feng2023automated" class="paper-cite-bib panel-collapse collapse">@incollection{feng2023automated,
+                    title={Automated Dental CBCT Segmentation Using Pseudo Labeling Method},
+                    author={Feng, Weiyan},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={156--168},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">Prior-Aware Cross Pseudo Supervision for Semi-supervised Tooth Segmentation</p>
+                <p class="paper-authors">Tingyi Lin, Pengju Lyu, Junchen Xiong, Xiaodong Wang, Kehan Song, Qiong Lou</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_15" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#lin2023prior" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="lin2023prior" class="paper-cite-bib panel-collapse collapse">@incollection{lin2023prior,
+                    title={Prior-Aware Cross Pseudo Supervision for Semi-supervised Tooth Segmentation},
+                    author={Lin, Tingyi and Lyu, Pengju and Xiong, Junchen and Wang, Xiaodong and Song, Kehan and Lou, Qiong},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={169--179},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+            <li class="paper-item">
+                <p class="paper-title">High-Precision Semi-supervised 3D Dental Segmentation Based on nnUNet</p>
+                <p class="paper-authors">Bingyan Zhang, Xuefei Zhu</p>
+                <ol class="paper-links">
+                    <li>[<a href="https://link.springer.com/chapter/10.1007/978-3-031-72396-4_16" class="paper-springer-link"><img src="icons/springer.png" class="paper-springer-icon" alt="Springer">Springer</a>]</li>
+                    <li>[<a data-toggle="collapse" data-parent="#citation" href="#zhang2023high" class="paper-cite-link"><img src="icons/cite.png" class="paper-cite-icon" alt="cite">BibTex</a>]</li>
+                </ol>
+                <div id="zhang2023high" class="paper-cite-bib panel-collapse collapse">@incollection{zhang2023high,
+                    title={High-Precision Semi-supervised 3D Dental Segmentation Based on nnUNet},
+                    author={Zhang, Bingyan and Zhu, Xuefei},
+                    booktitle={MICCAI Challenge on Semi-supervised Tooth Segmentation},
+                    pages={180--191},
+                    year={2023},
+                    publisher={Springer}
+                    }
+                </div>
+            </li>
+        </ul>
     </div>
 
     <div class="publication-content main-content">

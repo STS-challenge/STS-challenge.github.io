@@ -110,29 +110,301 @@
         </div>
     </div>
 
+<!--    <div class="alert-content main-content">-->
+<!--        <button class="btn btn-default alert-btn" type="button" data-toggle="collapse" data-target="#alertCollapseContent" aria-expanded="false" aria-controls="alertCollapseContent">-->
+<!--            <strong>Challenge On</strong>! You can click to Join. 🥳-->
+<!--        </button>-->
+<!--        <div class="collapse" id="alertCollapseContent">-->
+<!--            <p class="well" style="text-align: justify">-->
+<!--                You should ⬇️<a href="files/STS2024-REGISTRATION-FORM.pdf" class="alert-link">download</a> the form, sign it,-->
+<!--                and then, send it to our contact email.-->
+<!--                Once submitted, you'll get our challenge dataset download link.-->
+<!--                For more details, please check below.-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+
     <div class="alert-content main-content">
-        <button class="btn btn-default alert-btn" type="button" data-toggle="collapse" data-target="#alertCollapseContent" aria-expanded="false" aria-controls="alertCollapseContent">
-            <strong>Challenge On</strong>! You can click to Join. 🥳
-        </button>
-        <div class="collapse" id="alertCollapseContent">
-            <p class="well" style="text-align: justify">
-                You should ⬇️<a href="files/STS2024-REGISTRATION-FORM.pdf" class="alert-link">download</a> the form, sign it,
-                and then, send it to our contact email.
-                Once submitted, you'll get our challenge dataset download link.
-                For more details, please check below.
+        <div class="btn btn-default alert-btn">
+            <p style="text-align: center; margin-bottom: 0;">
+                🎉<strong>Result Release</strong>!🎉
+                <a href="panoramic_winners.html" class="breathing-btn">
+                    <span class="badge" style="font-size: 11pt">👉 Panoramic</span>
+                </a>
+                <a href="cbct_winners.html" class="breathing-btn">
+                    <span class="badge" style="font-size: 11pt">👉 CBCT</span>
+                </a>
             </p>
         </div>
     </div>
 
     <div class="introduction-content main-content">
         <h2 class="content-subtitle"></h2>
-        <p>
-            TBD: The 2D Panoramic X-ray Track has not yet concluded, and the final winner remains unknown. We will
-            announce the ultimate winner during the Workshop event.
-            <a href="https://www.codabench.org/competitions/3024/" class="breathing-btn">
-                <span class="badge">👉 CodaBench</span>
-            </a>
-        </p>
+        <div class="winner-table-container">
+            <table class="winner-table">
+                <tbody>
+                <tr style="border-top: 2px solid black">
+                    <td class="winner-head winner-right-border" rowspan="2" style="text-align: center;">Team</td>
+                    <td class="winner-head winner-bottom-border winner-right-border" colspan="3" style="text-align: center;">Image-level</td>
+                    <td class="winner-head winner-bottom-border winner-right-border" colspan="4" style="text-align: center;">Instance-level</td>
+                    <td class="winner-head winner-bottom-border winner-right-border" colspan="2" style="text-align: center;">Algorithm-level</td>
+                    <td class="winner-head winner-right-border" rowspan="2" style="text-align: center;">Final Rank</td>
+                    <td class="winner-head" rowspan="2" style="text-align: center;">Links</td>
+                </tr>
+                <tr style="border-bottom: 2px solid black">
+                    <td class="winner-metric">DSC (↑)</td>
+                    <td class="winner-metric">IoU (↑)</td>
+                    <td class="winner-metric winner-right-border">NSD (↑)</td>
+                    <td class="winner-metric">DSC (↑)</td>
+                    <td class="winner-metric">IoU (↑)</td>
+                    <td class="winner-metric">NSD (↑)</td>
+                    <td class="winner-metric winner-right-border">IA (↑)</td>
+                    <td class="winner-metric">RT (↓)</td>
+                    <td class="winner-metric winner-right-border">GPU-area (↓)</td>
+                </tr>
+                <tr class="winner-bottom-border">
+                    <td class="winner-right-border">
+                        <a href="https://www.codabench.org/profiles/organization/419/" class="winner-user-link">
+                            <img src="icons/user.png" class="winner-user-icon" alt="User">ChohoTech
+                        </a>
+                    </td>
+                    <td>0.918</td>
+                    <td>0.849</td>
+                    <td class="winner-right-border">0.956</td>
+                    <td>0.845</td>
+                    <td>0.765</td>
+                    <td>0.872</td>
+                    <td class="winner-right-border">0.883</td>
+                    <td>13.291</td>
+                    <td class="winner-right-border">&nbsp;7341.120</td>
+                    <td class="winner-right-border">1</td>
+                    <td>
+                        <ol class="winner-table-links">
+                            <li>[<a href="files/2d/01_ChohoTech.pdf" class="winner-ppt-link"><img src="icons/ppt.png" class="winner-ppt-icon" alt="PPT">PPT Share</a>]</li>
+                            <li>[<a href="https://github.com/fenglian425/STS2D" class="winner-github-link"><img src="icons/github.png" class="winner-github-icon" alt="Github">Code</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-openreview-link"><img src="icons/openreview.png" class="winner-openreview-icon" alt="Paper">Paper</a>]</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="winner-bottom-border">
+                    <td class="winner-right-border">
+                        <a href="https://www.codabench.org/profiles/user/camerart2024/" class="winner-user-link">
+                            <img src="icons/user.png" class="winner-user-icon" alt="User">camerart2024
+                        </a>
+                    </td>
+                    <td>0.869</td>
+                    <td>0.771</td>
+                    <td class="winner-right-border">0.907</td>
+                    <td>0.703</td>
+                    <td>0.613</td>
+                    <td>0.740</td>
+                    <td class="winner-right-border">0.734</td>
+                    <td>13.274</td>
+                    <td class="winner-right-border">14250.980</td>
+                    <td class="winner-right-border">2</td>
+                    <td>
+                        <ol class="winner-table-links">
+                            <li>[<a href="files/2d/02_camerart2024.pdf" class="winner-ppt-link"><img src="icons/ppt.png" class="winner-ppt-icon" alt="PPT">PPT Share</a>]</li>
+                            <li>[<a href="https://github.com/Liaaaar/2024-MICCAI-STS-2D" class="winner-github-link"><img src="icons/github.png" class="winner-github-icon" alt="Github">Code</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-openreview-link"><img src="icons/openreview.png" class="winner-openreview-icon" alt="Paper">Paper</a>]</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="winner-bottom-border">
+                    <td class="winner-right-border">
+                        <a href="https://www.codabench.org/profiles/user/jichangkai/" class="winner-user-link">
+                            <img src="icons/user.png" class="winner-user-icon" alt="User">jichangkai
+                        </a>
+                    </td>
+                    <td>0.915</td>
+                    <td>0.859</td>
+                    <td class="winner-right-border">0.944</td>
+                    <td>0.801</td>
+                    <td>0.734</td>
+                    <td>0.817</td>
+                    <td class="winner-right-border">0.832</td>
+                    <td>55.897</td>
+                    <td class="winner-right-border">25461.260</td>
+                    <td class="winner-right-border">3</td>
+                    <td>
+                        <ol class="winner-table-links">
+                            <li>[<a href="files/2d/03_jichangkai.pdf" class="winner-ppt-link"><img src="icons/ppt.png" class="winner-ppt-icon" alt="PPT">PPT Share</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-github-link"><img src="icons/github.png" class="winner-github-icon" alt="Github">Code</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-openreview-link"><img src="icons/openreview.png" class="winner-openreview-icon" alt="Paper">Paper</a>]</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="winner-bottom-border">
+                    <td class="winner-right-border">
+                        <a href="https://www.codabench.org/profiles/user/dew123/" class="winner-user-link">
+                            <img src="icons/user.png" class="winner-user-icon" alt="User">dew123
+                        </a>
+                    </td>
+                    <td>0.844</td>
+                    <td>0.736</td>
+                    <td class="winner-right-border">0.886</td>
+                    <td>0.224</td>
+                    <td>0.574</td>
+                    <td>0.699</td>
+                    <td class="winner-right-border">0.658</td>
+                    <td>13.906</td>
+                    <td class="winner-right-border">15088.500</td>
+                    <td class="winner-right-border">4</td>
+                    <td>
+                        <ol class="winner-table-links">
+                            <li>[<a href="files/2d/04_dew123.pptx" class="winner-ppt-link"><img src="icons/ppt.png" class="winner-ppt-icon" alt="PPT">PPT Share</a>]</li>
+                            <li>[<a href="https://github.com/Dew026/DICL" class="winner-github-link"><img src="icons/github.png" class="winner-github-icon" alt="Github">Code</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-openreview-link"><img src="icons/openreview.png" class="winner-openreview-icon" alt="Paper">Paper</a>]</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="winner-bottom-border">
+                    <td class="winner-right-border">
+                        <a href="https://www.codabench.org/profiles/user/junqiangmler/" class="winner-user-link">
+                            <img src="icons/user.png" class="winner-user-icon" alt="User">junqiangmler
+                        </a>
+                    </td>
+                    <td>0.826</td>
+                    <td>0.713</td>
+                    <td class="winner-right-border">0.867</td>
+                    <td>0.368</td>
+                    <td>0.545</td>
+                    <td>0.678</td>
+                    <td class="winner-right-border">0.552</td>
+                    <td>14.047</td>
+                    <td class="winner-right-border">12483.380</td>
+                    <td class="winner-right-border">5</td>
+                    <td>
+                        <ol class="winner-table-links">
+                            <li class="winner-disabled-link">[<a href="#" class="winner-ppt-link"><img src="icons/ppt.png" class="winner-ppt-icon" alt="PPT">PPT Share</a>]</li>
+                            <li>[<a href="https://github.com/junqiangchen/STS2024" class="winner-github-link"><img src="icons/github.png" class="winner-github-icon" alt="Github">Code</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-openreview-link"><img src="icons/openreview.png" class="winner-openreview-icon" alt="Paper">Paper</a>]</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="winner-bottom-border">
+                    <td class="winner-right-border">
+                        <a href="https://www.codabench.org/profiles/user/isjinghao/" class="winner-user-link">
+                            <img src="icons/user.png" class="winner-user-icon" alt="User">isjinghao
+                        </a>
+                    </td>
+                    <td>0.826</td>
+                    <td>0.730</td>
+                    <td class="winner-right-border">0.863</td>
+                    <td>0.750</td>
+                    <td>0.587</td>
+                    <td>0.676</td>
+                    <td class="winner-right-border">0.698</td>
+                    <td>21.134</td>
+                    <td class="winner-right-border">27987.900</td>
+                    <td class="winner-right-border">6</td>
+                    <td>
+                        <ol class="winner-table-links">
+                            <li>[<a href="files/2d/06_isjinghao.pdf" class="winner-ppt-link"><img src="icons/ppt.png" class="winner-ppt-icon" alt="PPT">PPT Share</a>]</li>
+                            <li>[<a href="https://github.com/isbrycee/SemiT-SAM" class="winner-github-link"><img src="icons/github.png" class="winner-github-icon" alt="Github">Code</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-openreview-link"><img src="icons/openreview.png" class="winner-openreview-icon" alt="Paper">Paper</a>]</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="winner-bottom-border">
+                    <td class="winner-right-border">
+                        <a href="https://www.codabench.org/profiles/user/lazyman/" class="winner-user-link">
+                            <img src="icons/user.png" class="winner-user-icon" alt="User">lazyman
+                        </a>
+                    </td>
+                    <td>0.597</td>
+                    <td>0.430</td>
+                    <td class="winner-right-border">0.870</td>
+                    <td>0.385</td>
+                    <td>0.347</td>
+                    <td>0.725</td>
+                    <td class="winner-right-border">0.086</td>
+                    <td>11.810</td>
+                    <td class="winner-right-border">13910.320</td>
+                    <td class="winner-right-border">7</td>
+                    <td>
+                        <ol class="winner-table-links">
+                            <li> [<a href="files/2d/07_lazyman.pptx" class="winner-ppt-link"><img src="icons/ppt.png" class="winner-ppt-icon" alt="PPT">PPT Share</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-github-link"><img src="icons/github.png" class="winner-github-icon" alt="Github">Code</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-openreview-link"><img src="icons/openreview.png" class="winner-openreview-icon" alt="Paper">Paper</a>]</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="winner-bottom-border">
+                    <td class="winner-right-border">
+                        <a href="https://www.codabench.org/profiles/user/caiyichen/" class="winner-user-link">
+                            <img src="icons/user.png" class="winner-user-icon" alt="User">caiyichen
+                        </a>
+                    </td>
+                    <td>0.820</td>
+                    <td>0.703</td>
+                    <td class="winner-right-border">0.855</td>
+                    <td>0.530</td>
+                    <td>0.492</td>
+                    <td>0.566</td>
+                    <td class="winner-right-border">0.574</td>
+                    <td>19.531</td>
+                    <td class="winner-right-border">26666.571</td>
+                    <td class="winner-right-border">8</td>
+                    <td>
+                        <ol class="winner-table-links">
+                            <li class="winner-disabled-link">[<a href="#" class="winner-ppt-link"><img src="icons/ppt.png" class="winner-ppt-icon" alt="PPT">PPT Share</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-github-link"><img src="icons/github.png" class="winner-github-icon" alt="Github">Code</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-openreview-link"><img src="icons/openreview.png" class="winner-openreview-icon" alt="Paper">Paper</a>]</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="winner-bottom-border">
+                    <td class="winner-right-border">
+                        <a href="https://www.codabench.org/profiles/user/guo77777/" class="winner-user-link">
+                            <img src="icons/user.png" class="winner-user-icon" alt="User">guo77777
+                        </a>
+                    </td>
+                    <td>0.755</td>
+                    <td>0.614</td>
+                    <td class="winner-right-border">0.803</td>
+                    <td>0.324</td>
+                    <td>0.285</td>
+                    <td>0.386</td>
+                    <td class="winner-right-border">0.279</td>
+                    <td>18.421</td>
+                    <td class="winner-right-border">19694.260</td>
+                    <td class="winner-right-border">9</td>
+                    <td>
+                        <ol class="winner-table-links">
+                            <li class="winner-disabled-link">[<a href="#" class="winner-ppt-link"><img src="icons/ppt.png" class="winner-ppt-icon" alt="PPT">PPT Share</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-github-link"><img src="icons/github.png" class="winner-github-icon" alt="Github">Code</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-openreview-link"><img src="icons/openreview.png" class="winner-openreview-icon" alt="Paper">Paper</a>]</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr style="border-bottom: 2px solid black">
+                    <td class="winner-right-border">
+                        <a href="https://www.codabench.org/profiles/organization/465/" class="winner-user-link">
+                            <img src="icons/user.png" class="winner-user-icon" alt="User">cccc2024
+                        </a>
+                    </td>
+                    <td>0.651</td>
+                    <td>0.492</td>
+                    <td class="winner-right-border">0.679</td>
+                    <td>0.319</td>
+                    <td>0.192</td>
+                    <td>0.218</td>
+                    <td class="winner-right-border">0.244</td>
+                    <td>13.462</td>
+                    <td class="winner-right-border">17730.480</td>
+                    <td class="winner-right-border">10</td>
+                    <td>
+                        <ol class="winner-table-links">
+                            <li>[<a href="files/2d/10_cccc2024.pptx" class="winner-ppt-link"><img src="icons/ppt.png" class="winner-ppt-icon" alt="PPT">PPT Share</a>]</li>
+                            <li>[<a href="https://github.com/SUTAN-01/MICCAI-STS-2024" class="winner-github-link"><img src="icons/github.png" class="winner-github-icon" alt="Github">Code</a>]</li>
+                            <li class="winner-disabled-link">[<a href="#" class="winner-openreview-link"><img src="icons/openreview.png" class="winner-openreview-icon" alt="Paper">Paper</a>]</li>
+                        </ol>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
 </div>

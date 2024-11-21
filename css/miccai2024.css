@@ -217,6 +217,312 @@ table{
     width: auto;
 }
 
+/* 日程表的样式 */
+.tg {
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+}
+
+.tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12pt;
+    overflow: hidden;
+    padding: 12px 6px;
+    word-break: normal;
+    text-align: left;
+}
+
+.tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 12pt;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 12px 6px;
+    word-break: normal;
+    text-align: left;
+}
+
+.tg .tb-head-session {
+    background-color: #32835c;
+    color: white;
+    font-weight: bold;
+}
+
+.tg .tb-head-time {
+    background-color: #414042;
+    color: white;
+    font-weight: bold;
+}
+
+.tg .tb-head-talk {
+    background-color: #32835c;
+    color: white;
+    font-weight: bold;
+}
+
+.tg .tb-head-speaker {
+    background-color: #32835c;
+    color: white;
+    font-weight: bold;
+}
+
+.tg td:first-child, .tg th:first-child {
+    width: 130px;
+    max-width: 130px;
+    white-space: nowrap;
+}
+
+.tg .tb-challenge-name {
+    color: #ce5259;
+    font-weight: bold;
+    background: #f2d5d1;
+}
+
+.tg tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+.tg tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* 排名三线表表格 */
+.winner-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.winner-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.winner-head {
+    /*background-color: #414042;*/
+    color: #333;
+    font-weight: bold;
+}
+
+.winner-metric {
+    /*background-color: #32835c;*/
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.winner-table td {
+    border-color: black;
+    border-style: solid;
+    border-width: 0;
+    font-size: 12pt;
+    padding: 12px 6px;
+    word-break: normal;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.winner-table th {
+    border-color: black;
+    border-style: solid;
+    border-width: 0;
+    font-size: 12pt;
+    font-weight: normal;
+    padding: 12px 6px;
+    word-break: normal;
+    white-space: nowrap;
+}
+
+.winner-left-border {
+    border-left: 1px solid black !important;
+}
+
+.winner-right-border {
+    border-right: 1px solid black !important;
+}
+
+.winner-bottom-border {
+    border-bottom: 1px solid black !important;
+}
+
+.winner-ppt-link {
+    color: #d4512c;
+}
+
+.winner-ppt-icon {
+    height: 16px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+
+.winner-github-link {
+    color: #14191e;
+}
+
+.winner-github-icon {
+    height: 16px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+
+.winner-openreview-link {
+    color: #8c1b13;
+}
+
+.winner-openreview-icon {
+    height: 16px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+}
+
+.winner-disabled-link {
+    opacity: 0.6;
+    color: #999;
+    cursor: not-allowed;
+    user-select: none;
+    text-decoration: line-through;
+}
+
+.winner-disabled-link a {
+    color: inherit;
+    text-decoration: none;
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+}
+
+.winner-disabled-link img {
+    opacity: 0.6;
+    filter: grayscale(100%);
+}
+
+.winner-disabled-link:hover {
+    cursor: not-allowed;
+}
+
+.winner-user-link {
+    color: #14191e;
+}
+
+.winner-user-icon {
+    height: 16px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+
+.winner-table td:first-child, .tg th:first-child {
+    text-align: left !important;
+    padding-left: 20px !important;
+}
+
+.winner-table-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0 !important;
+}
+
+.winner-table-links li {
+    margin-right: 2px;
+}
+
+.winner-table tr:nth-child(n+3):hover {
+    background-color: #f5f5f5;
+}
+
+/* 论文列表样式 */
+.paper-list {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.paper-title {
+    margin-top: 6px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.paper-authors {
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-style: italic;
+}
+
+.paper-links {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0 !important;
+}
+
+.paper-links li {
+    margin-right: 6px;
+}
+
+.paper-arxiv-link {
+    color: #b32025;
+}
+
+.paper-arxiv-icon {
+    height: 16px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+
+.paper-pdf-link {
+    color: #b32025;
+}
+
+.paper-pdf-icon {
+    height: 16px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+
+.paper-springer-link {
+    color: #00326a;
+}
+
+.paper-springer-icon {
+    height: 16px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+
+.paper-github-link {
+    color: #14191e;
+}
+
+.paper-github-icon {
+    height: 16px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+
+.paper-cite-link {
+    color: #2a89c9;
+}
+
+.paper-cite-icon {
+    height: 16px;
+    margin-right: 2px;
+    margin-bottom: 6px;
+}
+
+.paper-cite-bib {
+    font-weight: 300;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
 /* 呼吸按钮样式 */
 .breathing-btn {
     display: inline-block;
@@ -277,10 +583,9 @@ table{
         padding-left: 18px !important;
     }
 
-    td{
+    .table>tbody>tr>td {
         width: 50%;
     }
-
 }
 
 @media (max-width: 1200px) {
